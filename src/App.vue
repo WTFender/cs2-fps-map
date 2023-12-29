@@ -153,12 +153,10 @@
 </template>
 
 <script>
-import markerIcon from "@/assets/hex.jpg";
 import { ref, reactive, inject } from "vue";
 export default {
   name: "App",
   created() {
-    this.markerIcon = markerIcon;
     this.selectConditions = inject("ol-selectconditions");
     this.hoverCondition = this.selectConditions.pointerMove;
     this.clickCondition = this.selectConditions.pointerClick;
